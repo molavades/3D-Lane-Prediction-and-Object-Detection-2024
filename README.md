@@ -7,6 +7,7 @@ This project explores neural network-based solutions for key challenges in auton
 - **3D Centerline Prediction**
 
 Leveraging datasets like **OpenLaneV2**, the project implements and evaluates models including CNNs, YOLO, and Vision Transformers to enhance the understanding of lane networks and improve object detection capabilities.
+
 ---
 
 ## Research Goals
