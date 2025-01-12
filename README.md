@@ -13,22 +13,22 @@ Leveraging datasets like **OpenLaneV2**, the project implements and evaluates mo
 ---
 
 ## Research Goals
-1. **Lane Topology Prediction:**
+**Lane Topology Prediction:**
 
 Predict adjacency between lane segments in road networks.
 Train and compare models like MLPs, CNNs, and Graph Neural Networks (optional).
 
-2. **Object Detection on Merged Views:**
+**Object Detection on Merged Views:**
 
 Merge camera views into front and rear perspectives.
 Train object detection models (e.g., YOLO) to identify objects in these views.
 
-3. **3D Centerline Prediction:**
+**3D Centerline Prediction:**
 
 Use advanced CNN and Vision Transformer models to predict 3D centerline points from images.
 Evaluate predictions with metrics like Frechet Distance and Chamfer Distance.
 
-4. **3D Positional Encoding:**
+**3D Positional Encoding:**
 
 Assign unique 3D coordinates to detected objects around a vehicle to create spatial awareness.
 
