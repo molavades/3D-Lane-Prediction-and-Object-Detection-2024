@@ -7,6 +7,27 @@ This project explores neural network-based solutions for key challenges in auton
 - **3D Centerline Prediction**
 
 Leveraging datasets like **OpenLaneV2**, the project implements and evaluates models including CNNs, YOLO, and Vision Transformers to enhance the understanding of lane networks and improve object detection capabilities.
+---
+
+## Research Goals
+1.**Lane Topology Prediction:**
+
+Predict adjacency between lane segments in road networks.
+Train and compare models like MLPs, CNNs, and Graph Neural Networks (optional).
+
+2.**Object Detection on Merged Views:**
+
+Merge camera views into front and rear perspectives.
+Train object detection models (e.g., YOLO) to identify objects in these views.
+
+3.**3D Centerline Prediction:**
+
+Use advanced CNN and Vision Transformer models to predict 3D centerline points from images.
+Evaluate predictions with metrics like Frechet Distance and Chamfer Distance.
+
+4.**3D Positional Encoding:**
+
+Assign unique 3D coordinates to detected objects around a vehicle to create spatial awareness.
 
 ---
 
@@ -63,5 +84,39 @@ The project uses the **OpenLaneV2** dataset for lane annotations, object detecti
   - [SubsetA Image Dataset](https://drive.google.com/file/d/1jio4Gj3dNlXmSzebO6D7Uy5oz4EaTNTq/view)  
 
 ---
+## Project Workflow
+**Step 1: Data Preprocessing**
+Merge and preprocess image frames to create combined views.
+Extract 3D centerline points and annotations for training and evaluation.
 
-## Project Structure  
+**Step 2: Model Training**
+Lane-Lane Topology Prediction: Train MLP, CNN, and optionally Graph Neural Networks.
+Object Detection: Fine-tune YOLO or custom CNNs on merged views.
+3D Centerline Prediction: Train pre-trained CNNs or Vision Transformers.
+
+**Step 3: Evaluation**
+Evaluate models using:
+Binary classification metrics for topology prediction.
+Detection accuracy for object detection.
+Frechet Distance and Chamfer Distance for 3D centerline predictions.
+
+**Step 4: Visualization**
+Visualize lane annotations, detected objects, and 3D centerlines on input images.
+
+---
+
+## Results  
+- **Topology Prediction:**  
+  - MLP and CNN models achieved reasonable accuracy in predicting adjacency between lane segments.  
+  - Graph Neural Networks (optional) demonstrated better performance in capturing complex road networks.  
+- **Object Detection:**  
+  - Merged front and rear views successfully trained object detection models with YOLO.  
+  - Bonus tasks enhanced the quality of visualizations and panoramic views.  
+- **3D Centerline Prediction:**  
+  - Vision Transformers outperformed traditional CNN-based regression models in predicting 3D centerline points.  
+  - Evaluation metrics (Frechet Distance and Chamfer Distance) highlighted the precision of predictions.  
+
+---
+
+## Acknowledgments
+Special thanks to Professor Dino Konstantopoulos and the teaching team of INFO6106 Neural Networks for their support and guidance.
